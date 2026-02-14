@@ -42,16 +42,22 @@
     <section class="py-4">
         <div class="container">
             <div class="flex-grow-1">
-                <h3 class="h3 fw-bold text-center text-dark mb-3">Meet Our Experts</h3>
+                <h3 id="experts" class="h3 fw-bold text-center text-dark mb-3">Meet Our Experts</h3>
             </div>
             <div id="expertCarousel" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#expertCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#expertCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#expertCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#expertCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
                 <div class="carousel-inner">
                         <div class="carousel-item active">
                         <div class="card mb-3 shadow-sm border-primary border-2">
                             <div class="card-body p-4">
                                 <div class="d-flex align-items-start mb-3">
                                     <div class="flex-grow-1">
-                                        <h3 class="h5 card-title fw-bold mb-1"> John Doe</h3>
+                                        <h3 class="text-primary card-title fw-bold mb-1"> Malcomn Dubois</h3>
                                     </div>
                                 </div>
 
@@ -63,7 +69,6 @@
                                     <p class="card-text text-secondary fw-semibold p-2 text-center" > Our Brake Repair expert</p>
                                 </span>
                                 </div>
-                                
                                 <h4 class="text-primary fw-bold mb-0 text-left text-end">Available</h4>
                                 </div>
                             </div>
@@ -74,7 +79,7 @@
                             <div class="card-body p-4">
                                 <div class="d-flex align-items-start mb-3">
                                     <div class="flex-grow-1">
-                                        <h3 class="h5 card-title fw-bold mb-1"> John Doe</h3>
+                                        <h3 class="text-primary card-title fw-bold mb-1"> Luiz Gonzalez</h3>
                                     </div>
                                 </div>
 
@@ -83,10 +88,53 @@
                                 <img src="experts\2.jpg" class="expertImg img-fluid h-100 border" alt="Gavin">
                                 </span>                              
                                 <span class="">
-                                    <p class="card-text text-secondary fw-semibold p-2 text-center" > Our Brake Repair expert</p>
+                                    <p class="card-text text-secondary fw-semibold p-2 text-center" > Our Chain Replacement Expert</p>
                                 </span>
                                 </div>
-                                
+                                <h4 class="text-primary fw-bold mb-0 text-left text-end">Available</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                        <div class="card mb-3 shadow-sm border-primary border-2">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="flex-grow-1">
+                                        <h3 class="text-primary card-title fw-bold mb-1"> Gavin Dubois</h3>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span>
+                                <img src="experts\3.jpg" class="expertImg img-fluid h-100 border" alt="Gavin">
+                                </span>                              
+                                <span class="">
+                                    <p class="card-text text-secondary fw-semibold p-2 text-center" > Our Bike Inspector and Gear Expert</p>
+                                </span>
+                                </div>
+                                <h4 class=" mb-0 fw-bold text-left text-end">Unavailable</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                        <div class="card mb-3 shadow-sm border-primary border-2">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="flex-grow-1">
+                                        <h3 class="text-primary card-title fw-bold mb-1"> Daniel Barnes</h3>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span>
+                                <img src="experts\4.jpg" class="expertImg img-fluid h-100 border" alt="Gavin">
+                                </span>                              
+                                <span class="">
+                                    <p class="card-text text-secondary fw-semibold p-2 text-center" > Our Tire repair expert, general support</p>
+                                </span>
+                                </div>
                                 <h4 class="text-primary fw-bold mb-0 text-left text-end">Available</h4>
                                 </div>
                             </div>
@@ -98,7 +146,7 @@
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#expertCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="carousel-control-next-icon " aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
