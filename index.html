@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PedalWorks - Bike Repair & Services</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+    <!-- Header Section -->
+    <header class="bg-primary bg-gradient text-white py-5 border-bottom border-info border-3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <!-- Logo and Business Name -->
+                    <div class="text-center">
+                        <div class="logo-wrapper bg-white rounded-circle mx-auto mb-3 border border-info border-3 d-flex align-items-center justify-content-center" style="width: 150px; height: 150px;">
+                            <img src="logo.png" alt="PedalWorks Logo" class="rounded-circle p-2" style="width: 100%; height: 100%; object-fit: contain;">
+                        </div>
+                        <h1 class="display-4 fw-bold text-uppercase mb-2">PedalWorks</h1>
+                        <p class="text-uppercase fw-light opacity-75" style="letter-spacing: 2px;">Bike Repair & Maintenance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Services Section -->
+    <section class="py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <h2 class="h3 fw-bold text-center text-dark mb-3">Our Services</h2>
+                    
+                    <!-- Scrollable Services Container -->
+                    <div class="overflow-auto border border-2 border-primary rounded-3 p-3 bg-white shadow-sm" style="max-height: 450px;">
+                    
+                        <!-- Service Card 1: Brake Repair -->
+                        <div class="card mb-3 shadow-sm border-primary border-2">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="bg-primary text-white rounded-3 p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-disc fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h3 class="h5 card-title fw-bold mb-1">Brake Repair</h3>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary mb-3">
+                                    Professional brake inspection, pad replacement, and adjustment for safe stopping power.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary small fw-semibold">
+                                        <i class="bi bi-clock me-1"></i>30-45 minutes
+                                    </span>
+                                    <span class="h4 text-primary fw-bold mb-0">$30</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 fw-bold text-white text-uppercase" onclick="toggleService(this)">
+                                    Select Service
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Card 2: Flat Tire Fix -->
+                        <div class="card mb-3 shadow-sm border-primary border-2">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="bg-primary text-white rounded-3 p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-arrow-repeat fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h3 class="h5 card-title fw-bold mb-1">Flat Tire Fix</h3>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary mb-3">
+                                    Quick flat tire repair with patch or tube replacement to get you back on the road.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary small fw-semibold">
+                                        <i class="bi bi-clock me-1"></i>15-20 minutes
+                                    </span>
+                                    <span class="h4 text-primary fw-bold mb-0">$25</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 fw-bold text-white text-uppercase" onclick="toggleService(this)">
+                                    Select Service
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Card 3: Full Tune-Up -->
+                        <div class="card mb-3 shadow-sm border-primary border-2">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="bg-primary text-white rounded-3 p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-gear-fill fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h3 class="h5 card-title fw-bold mb-1">Full Tune-Up</h3>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary mb-3">
+                                    Complete bike inspection, brake and gear adjustment, chain lubrication, and safety check.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary small fw-semibold">
+                                        <i class="bi bi-clock me-1"></i>60-90 minutes
+                                    </span>
+                                    <span class="h4 text-primary fw-bold mb-0">$60</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 fw-bold text-white text-uppercase" onclick="toggleService(this)">
+                                    Select Service
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Card 4: Chain Replacement -->
+                        <div class="card mb-3 shadow-sm border-primary border-2">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="bg-primary text-white rounded-3 p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-link-45deg fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h3 class="h5 card-title fw-bold mb-1">Chain Replacement</h3>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary mb-3">
+                                    Replace worn chain with a new one for smooth shifting and improved performance.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary small fw-semibold">
+                                        <i class="bi bi-clock me-1"></i>20-30 minutes
+                                    </span>
+                                    <span class="h4 text-primary fw-bold mb-0">$35</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 fw-bold text-white text-uppercase" onclick="toggleService(this)">
+                                    Select Service
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Service Card 5: Gear Adjustment -->
+                        <div class="card mb-3 shadow-sm border-primary border-2">
+                            <div class="card-body p-4">
+                                <div class="d-flex align-items-start mb-3">
+                                    <div class="bg-primary text-white rounded-3 p-3 me-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                        <i class="bi bi-sliders fs-4"></i>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h3 class="h5 card-title fw-bold mb-1">Gear Adjustment</h3>
+                                    </div>
+                                </div>
+                                <p class="card-text text-secondary mb-3">
+                                    Fine-tune your derailleurs for crisp, accurate shifting across all gears.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="text-primary small fw-semibold">
+                                        <i class="bi bi-clock me-1"></i>25-35 minutes
+                                    </span>
+                                    <span class="h4 text-primary fw-bold mb-0">$40</span>
+                                </div>
+                                <button class="btn btn-primary btn-lg w-100 fw-bold text-white text-uppercase" onclick="toggleService(this)">
+                                    Select Service
+                                </button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

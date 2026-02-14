@@ -1,0 +1,16 @@
+
+:root {
+    --bs-primary:#0a4768;
+    --bs-primary-rgb: 37, 99, 235;
+}
+
+.card.selected {
+    background-color: #dbeafe !important;
+    border-color: #00A9A5 !important;
+    border-width: 3px !important;
+}
+
+.btn.selected {
+    background-color: #90C2E7 !important;
+    border-color: #00a9a5 !important;
+}
