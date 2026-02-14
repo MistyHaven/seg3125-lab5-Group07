@@ -14,3 +14,17 @@
     background-color: #90C2E7 !important;
     border-color: #00a9a5 !important;
 }
+
+.topButtons {
+    text-decoration: none;
+}
+
+.expertImg{
+    width: 300px;
+
+}
+
+.iconCol{
+    color: grey;
+    opacity: 70%;
+}
