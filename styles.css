@@ -48,3 +48,24 @@
     background-color: #b3b3b3;
     opacity: 1;
 }
+
+footer{
+    padding-top: 100px;
+}
+
+.primary{
+    padding: 10px;
+}
+
+.secondary{
+    background-color: #b3b3b3;
+    height:100%;
+}
+
+.map{
+    padding: 10px;
+}
+
+.workingHours{
+    padding: 50px;
+}
