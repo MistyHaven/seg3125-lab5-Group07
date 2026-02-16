@@ -500,37 +500,51 @@
     </section>
 
 
-
+    <!-- Footer -->
     <footer id="more" class="py-4">
         <div class="primary bg-primary">
             <div class="container">
 
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <div class="map rounded">
-                        <h2 class="text-white"> Find Us: </h2>
-                        <p class="opacity-75 text-white">Address: 50 Rideau St, Ottawa, ON K1N 9J7 </p>
-                        <iframe class="rounded border"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.2152207262347!2d-75.6912715!3d45.4251627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05010b10aa09%3A0xadb5eb264eeb2625!2sCF%20Rideau%20Centre!5e0!3m2!1sen!2sca!4v1771116526545!5m2!1sen!2sca"
-                            width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-
-                    <div class="p-2">
-                        <h2 class="text-white align-text-top"> Our Working Hours</h2>
-                        <div
-                            class="column bg-secondary text-white rounded-3 p-4 me-3  align-items-center justify-content-center">
-                            <p>Lundi/Monday 9:00 am - 5:00 pm</p>
-                            <p>Mardi/Tuesday 9:00 am - 5:00 pm</p>
-                            <p>Mercredi/Wednesday 9:00 am - 5:00 pm</p>
-                            <p>Jeudi/Thursday 9:00 am - 5:00 pm</p>
-                            <p>Vendredi/Friday 9:00 am - 5:00 pm</p>
-                            <p>Samedi/Saturday 11:00 am - 4 pm</p>
+                <div class="row g-4 justify-content-between">
+                    <!-- Find Us / Map -->
+                    <div class="col-12 col-lg-5">
+                        <div class="map rounded h-100">
+                            <h2 class="text-white h3 mb-3">Find Us:</h2>
+                            <p class="opacity-75 text-white mb-3"><i class="bi bi-geo-alt me-2"></i>50 Rideau St,
+                                Ottawa, ON K1N 9J7</p>
+                            <div class="ratio ratio-16x9">
+                                <iframe class="rounded border"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.2152207262347!2d-75.6912715!3d45.4251627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05010b10aa09%3A0xadb5eb264eeb2625!2sCF%20Rideau%20Centre!5e0!3m2!1sen!2sca!4v1771116526545!5m2!1sen!2sca"
+                                    style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
-                    <div class="p-3">
-                        <h2 class="text-white align-text-top"> Contact Us: </h2>
-                        <p class="opacity-75 text-white">Email: contact-info@pendalworks.com</p>
-                        <p class="opacity-75 text-white">Phone: 333-452-9850</p>
+
+                    <!-- Working Hours -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="h-100">
+                            <h2 class="text-white h3 mb-3">Working Hours</h2>
+                            <div class="bg-secondary text-white rounded-3 p-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="d-flex justify-content-between mb-2"><span>Mon-Fri:</span> <span
+                                            class="fw-bold">9:00 AM - 5:00 PM</span></li>
+                                    <li class="d-flex justify-content-between"><span>Sat-Sun:</span> <span
+                                            class="fw-bold">11:00 AM - 4:00 PM</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Us -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="h-100">
+                            <h2 class="text-white h3 mb-3">Contact Us:</h2>
+                            <ul class="list-unstyled text-white opacity-75">
+                                <li class="mb-2"><i class="bi bi-envelope me-2"></i>contact-info@pendalworks.com</li>
+                                <li><i class="bi bi-telephone me-2"></i>333-452-9850</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
