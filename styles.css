@@ -17,6 +17,13 @@
 .topButtons {
     text-decoration: none;
 }
+h2 i {
+    transition: transform 0.3s ease;
+}
+
+h2:hover i {
+    transform: scale(1.2);
+}
 
 .service-card {
     transition: all 0.3s ease;
