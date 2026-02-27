@@ -10,31 +10,37 @@ const bookingState = {
 
 // Toggle service selection
 function selectService(serviceName, price) {
-    // Update State
+
+    // 1️⃣ Update State
     bookingState.service = serviceName;
     bookingState.servicePrice = price;
 
-    // UI Feedback: Highlight selected card
-    document.querySelectorAll('.card').forEach(card => card.classList.remove('border-success', 'border-3'));
-    document.querySelectorAll('.service-select-btn').forEach(btn => {
-        btn.classList.remove('btn-success');
-        btn.classList.add('btn-primary');
-        btn.textContent = 'Select Service';
+    // 2️⃣ Remove selection from ALL service cards ONLY
+    document.querySelectorAll('#services .service-card').forEach(card => {
+        card.classList.remove('selected');
     });
 
-    // Find the specific card and button (using simple traversal for now)
-    // In a real app, we'd use IDs, but here we can traverse
-    const headings = document.querySelectorAll('.card-title');
-    for (const h3 of headings) {
-        if (h3.textContent.trim() === serviceName) {
-            const card = h3.closest('.card');
-            card.classList.remove('border-primary', 'border-2');
-            card.classList.add('border-success', 'border-3');
+    // 3️⃣ Reset all buttons
+    document.querySelectorAll('#services .service-select-btn').forEach(btn => {
+        btn.classList.remove('btn-success');
+        btn.classList.add('btn-primary');
+        btn.textContent = "Select Service";
+    });
 
-            const btn = card.querySelector('button');
-            btn.classList.remove('btn-primary');
-            btn.classList.add('btn-success');
-            btn.textContent = 'Selected ✓';
+    // 4️⃣ Find the clicked card using the service name
+    const headings = document.querySelectorAll('#services .card-title');
+
+    for (const heading of headings) {
+        if (heading.textContent.trim() === serviceName) {
+
+            const card = heading.closest('.service-card');
+            card.classList.add('selected');
+
+            const button = card.querySelector('.service-select-btn');
+            button.classList.remove('btn-primary');
+            button.classList.add('btn-success');
+            button.textContent = "Selected ✓";
+
             break;
         }
     }
@@ -42,8 +48,9 @@ function selectService(serviceName, price) {
     // Update Summary
     updateWizardSummary();
 
-    // Scroll to Experts Section
-    document.getElementById('experts').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Smooth scroll to experts
+    document.getElementById('experts')
+        .scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function selectExpert(expertName) {
