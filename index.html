@@ -16,7 +16,7 @@
 <body class="bg-light">
     <!-- Header Section -->
     <header class="bg-primary bg-gradient text-white py-5 border-bottom border-info border-3">
-        <div class="container">
+        <div id="topMenu" class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <!-- Logo and Business Name -->
@@ -29,27 +29,29 @@
                         <h1 class="display-4 fw-bold text-uppercase mb-2">PedalWorks</h1>
                         <p class="text-uppercase fw-light opacity-75" style="letter-spacing: 2px;">Bike Repair &
                             Maintenance</p>
+                        <!--
                         <section style="letter-spacing: 2px; word-spacing: 1px">
                             <a class="topButtons text-white" href="#services"> Services </a>
                             <a class="topButtons text-white" href="#experts"> Experts </a>
                             <a class="topButtons text-white" href="#booking"> Appointments </a>
                             <a class="topButtons text-white" href="#more"> Info </a>
                         </section>
+                        -->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hamburger_menu">
+        <div class="hamburger_menu rounded-top">
             <!--LINKS-->
              <!-- Hamburger Menu part-->
-            <a href="javascript:void(0);" class="iconHam" onclick="myBurgerMenu()">
+            <a href="javascript:void(0);" class="iconHam rounded" onclick="myBurgerMenu()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
+                Navigate
             </a>
-            <div id="burger_links">
+            <div id="burger_links" class="rounded">
                 <a class="topButtons text-white" href="#topMenu"> Top </a>
-                <a class="topButtons text-white" href="#services"> Services </a>
                 <a class="topButtons text-white" href="#services"> Services </a>
                 <a class="topButtons text-white" href="#experts"> Experts </a>
                 <a class="topButtons text-white" href="#booking"> Appointments </a>
@@ -63,7 +65,7 @@
 
     <!-- Services Section -->
 <section class="py-5 bg-light">
-    <div class="container">
+    <div id="services" class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8">
 
@@ -271,7 +273,7 @@
 </section>
     <!-- Experts Section -->
     <section class="py-4">
-        <div class="container">
+        <div id="experts" class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <div class="flex-grow-1">
