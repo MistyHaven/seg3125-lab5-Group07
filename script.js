@@ -216,3 +216,12 @@ function confirmWizardBooking() {
     // Scroll to result
     resultDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
+
+function myBurgerMenu(){
+    var links = document.getElementById("burger_links");
+    if (links.style.display === "block"){
+        links.style.display = "none";
+    } else{
+        links.style.display = "block";
+    }
+}

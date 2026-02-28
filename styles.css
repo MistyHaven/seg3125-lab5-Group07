@@ -46,17 +46,19 @@ h2:hover i {
 }
 
 .iconCol {
-    color: grey;
+    color: rgb(49, 49, 49);
     opacity: 70%;
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23b3b3b3'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23575555'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23b3b3b3'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23575555'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
+
+
 
 /* Reduce width and height of carousel controls to prevent overlap with card buttons */
 #expertCarousel .carousel-control-prev,
@@ -67,14 +69,14 @@ h2:hover i {
 }
 
 .carousel-indicators [data-bs-target] {
-    background-color: #b3b3b3;
+    background-color: #1c1c1c;
     opacity: 0.5;
 
 }
 
 
 .carousel-indicators .active {
-    background-color: #b3b3b3;
+    background-color: #575555;
     opacity: 1;
 }
 
@@ -98,3 +100,37 @@ footer {
 .workingHours {
     padding: 50px;
 }
+
+/* Hamburger menu*/
+
+.hamburger_menu{
+    overflow: hidden;
+    background-color: red;
+    position: relative;
+}
+
+.hamburger_menu #burger_links{
+    display: none;
+}
+
+.hamburger_menu a{
+    color: rgb(33, 11, 133);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.hamburger_menu a.iconHam{
+    background: rgb(68, 161, 201);
+    display: block !important;
+    position: relative;
+    right: 0;
+    left: 0;
+}
+
+.hamburger_menu a:hover{
+    background-color: #a1cbeb;
+    color: rgb(255, 255, 255);
+}
+
